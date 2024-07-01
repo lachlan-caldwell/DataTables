@@ -25,4 +25,8 @@ public class LoginPage extends BasePage {
         this.password = password;
     }
 
+    public void clickLogin() {
+        webDriver.findElement(loginButton).click();
+    }
+
 }

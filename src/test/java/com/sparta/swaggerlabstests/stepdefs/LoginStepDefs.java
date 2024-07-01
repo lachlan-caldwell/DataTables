@@ -3,6 +3,7 @@ package com.sparta.swaggerlabstests.stepdefs;
 import com.sparta.swaggerlabstests.lib.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefs extends StepDefsSuper{
@@ -22,6 +23,10 @@ public class LoginStepDefs extends StepDefsSuper{
 
     @And("I click the login button")
     public void iClickTheLoginButton() {
-        webDriver.
+        loginPage.clickLogin();
+    }
+
+    @Then("I will be taken to the Products Page")
+    public void iWillBeTakenToTheProductsPage() {
     }
 }
